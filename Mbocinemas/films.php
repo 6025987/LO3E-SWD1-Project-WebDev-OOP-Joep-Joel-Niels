@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBO Cinemas - Home</title>
+    <title>MBO Cinemas - Films</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,21 +20,16 @@
         </nav>
     </header>
  
-    <!-- Zoekbalk -->
     <div class="search-bar">
-        <input type="text" placeholder="Zoek een film of bioscoop...">
-        <button>🔍</button>
-    </div>
+    <input type="text" placeholder="Zoek een film of bioscoop...">
+    <button>🔍</button>
+</div>
  
     <!-- Layout -->
     <div class="layout">
         <!-- Main Content -->
         <main>
-            <section class="promotie-slide">
-                <p>Promotie Slide</p>
-            </section>
- 
-            <h2>Populaire Films</h2>
+            <h2 class="bioscoop-title">Populaire Films</h2>
             <div class="film-grid">
                 <div class="film-kaart">Populaire Film</div>
                 <div class="film-kaart">Populaire Film</div>
@@ -43,6 +38,7 @@
                 <div class="film-kaart">Populaire Film</div>
                 <div class="film-kaart">Populaire Film</div>
             </div>
+            <div class="advertentie">AD</div>
         </main>
  
         <!-- Sidebar -->
@@ -71,4 +67,3 @@
     </footer>
 </body>
 </html>
- 
