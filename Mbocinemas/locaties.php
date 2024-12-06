@@ -47,8 +47,8 @@
 <footer>
 <div>
 <a href="locaties.php">Onze Locaties</a>
-<a href="#">Klantenservice</a>
-<a href="#">Contact</a>
+<a href="klantenservice.php">Klantenservice</a>
+<a href="contact.php">Contact</a>
 </div>
 </footer>
  
