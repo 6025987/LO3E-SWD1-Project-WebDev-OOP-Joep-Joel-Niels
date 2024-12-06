@@ -1,0 +1,231 @@
+/* Algemene instellingen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+header {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+header .logo {
+    font-size: 1.5rem;
+}
+ 
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ 
+header nav ul li {
+    margin: 0 15px;
+}
+ 
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+/* Promotie Slide */
+.promotie-slide {
+    height: 300px;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+}
+ 
+/* Sidebar */
+aside {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+}
+ 
+aside button,
+aside select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+/* Zoekbalk */
+.search-bar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+ 
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+ 
+.search-bar button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ 
+/* Layout met Sidebar rechts */
+.layout {
+    display: flex;
+    flex-direction: row;
+}
+ 
+.layout main {
+    flex: 1;
+    padding: 20px;
+}
+ 
+/* Filmoverzicht */
+.film-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+ 
+.film-kaart {
+    background: lightgray;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+ 
+.advertentie {
+    width: 300px;
+    height: 200px;
+    background: darkgray;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+ 
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+ 
+/* Nieuwe CSS voor de offer sectie */
+.offer-section {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+ 
+.offer-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+ 
+.offer-details {
+    font-size: 1rem;
+    color: #555;
+}
+ 
+.offer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+ 
+/* Stijlen voor de zoekbalk */
+.search-bar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+ 
+.search-bar input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ 
+.search-bar button {
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+.search-bar button:hover {
+    background-color: #004080;
+}
+ 
+/* Stijlen voor de locaties lijst */
+.locations-list {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+ 
+.locations-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+ 
+.locations-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+ 
+.locations-list li:last-child {
+    border-bottom: none;
+}
+ 
+/* Kaart container */
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
