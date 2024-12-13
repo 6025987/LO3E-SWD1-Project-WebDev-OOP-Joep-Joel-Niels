@@ -67,29 +67,6 @@ aside select {
     cursor: pointer;
 }
  
-/* Zoekbalk */
-.search-bar {
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-}
- 
-.search-bar input {
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
- 
-.search-bar button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
- 
 /* Layout met Sidebar rechts */
 .layout {
     display: flex;
@@ -228,4 +205,76 @@ footer a {
     height: 400px;
     margin-top: 20px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+    .layout {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        border: none;
+        border-top: 1px solid #ddd;
+        margin-top: 20px;
+    }
+    .promotie-slide {
+        width: 125%;
+        margin: 0;
+    }
+    .film-grid {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        padding: 0;
+        width: 125%;
+    }
+}
+
+
+/* Medium screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .film-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+/* General Updates for Responsiveness */
+body {
+    font-size: 1rem; /* Base font size for scaling */
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promotie-slide {
+    font-size: 1.8rem;
+}
+
+.film-kaart {
+    height: 150px; /* Reduced height for smaller devices */
+    font-size: 20px;
+}
+
+.search-bar input {
+    width: 90%; /* Dynamic width for responsiveness */
+}
+
+.search-bar button {
+    padding: 8px; /* Adjusted size */
 }
