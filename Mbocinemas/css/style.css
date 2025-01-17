@@ -199,7 +199,7 @@ footer a {
     border-bottom: none;
 }
  
-/* Kaart container */
+
 #map {
     width: 100%;
     height: 400px;
@@ -241,10 +241,10 @@ footer a {
 }
 
 
-/* Medium screens (max-width: 1024px) */
+
 @media screen and (max-width: 1024px) {
     .film-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     main {
@@ -252,9 +252,9 @@ footer a {
     }
 }
 
-/* General Updates for Responsiveness */
+
 body {
-    font-size: 1rem; /* Base font size for scaling */
+    font-size: 1rem; 
 }
 
 header nav ul {
@@ -267,14 +267,14 @@ header nav ul {
 }
 
 .film-kaart {
-    height: 150px; /* Reduced height for smaller devices */
+    height: 150px; 
     font-size: 20px;
 }
 
 .search-bar input {
-    width: 90%; /* Dynamic width for responsiveness */
+    width: 90%; 
 }
 
 .search-bar button {
-    padding: 8px; /* Adjusted size */
+    padding: 8px; 
 }
