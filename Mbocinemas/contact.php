@@ -3,7 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Contact Us</title>
+
+  <?php
+include 'pdo.php';
+?>
+  <header>
+        <div class="logo">MBO Cinemas</div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="films.php">Films</a></li>
+                <li><a href="#">Reserveringen</a></li>
+                <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -124,14 +142,14 @@
 
     <div class="right">
       <form action="#">
-        <label for="first-name">Voor naam</label>
-        <input type="text" id="first-name" placeholder="Uw voor naam" required>
+        <label for="first-name">Voornaam:</label>
+        <input type="text" id="first-name" placeholder="voornaam:" required>
 
-        <label for="last-name">Achter naam</label>
-        <input type="text" id="last-name" placeholder="Uw achter naam" required>
+        <label for="last-name">Achternaam:</label>
+        <input type="text" id="last-name" placeholder="achternaam:" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Uw email address" required>
+        <input type="email" id="email" placeholder="email-address:" required>
 
         <label for="query">wat voor soort vraag heeft u?</label>
         <select id="query" required>
@@ -141,8 +159,8 @@
           <option value="other">Andere</option>
         </select>
 
-        <label for="phone">Telefoon nummer</label>
-        <input type="tel" id="phone" placeholder="Uw telefoon nummer" required>
+        <label for="phone">Telefoonnummer:</label>
+        <input type="tel" id="phone" placeholder="Uw telefoonnummer:" required>
 
         <label for="message">hier is jou bericht</label>
         <textarea id="message" rows="4" placeholder="Type hier uw bericht..." required></textarea>

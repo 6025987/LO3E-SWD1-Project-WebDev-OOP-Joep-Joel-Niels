@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBO Cinemas - Klantenservice</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header -->
@@ -15,6 +15,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="films.php">Films</a></li>
                 <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
+                <li><a href="filmreviews.php">reviews</a></li>
             </ul>
         </nav>
     </header>
@@ -27,6 +28,9 @@
                 Heb je een klacht of opmerking over onze bioscopen, films, of diensten? Vul het onderstaande formulier in
                 en wij nemen zo snel mogelijk contact met je op.
             </p>
+            <?php
+include 'pdo.php';
+?>
             <form>
                 <label for="klacht">Je klacht of opmerking:</label>
                 <textarea id="klacht" name="klacht" placeholder="Beschrijf hier je klacht of opmerking..."></textarea>
